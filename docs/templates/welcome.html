@@ -1,0 +1,118 @@
+<!---<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome</title>
+</head>
+<body>
+    <h1>Welcome {{ username }}!</h1>
+    <p>User Type: {{ user_type }}</p>
+    <p>Login Time: {{ login_time }}</p>
+    <form action="{{ url_for('logout') }}" method="post">
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description"></textarea><br>
+        <button type="submit">Logout</button>
+    </form>--->
+	<!---<form action="/logout" method="POST">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required><br><br>
+
+    <label for="user_type">User Type:</label>
+    <select id="user_type" name="user_type" required>
+        <option value="supplier">Supplier</option>
+        <option value="installer">Installer</option>
+    </select><br><br>
+
+    <label for="description">Description (Optional):</label>
+    <input type="text" id="description" name="description"><br><br>
+
+    <button type="submit">Logout</button>
+</form>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+</head>
+<body>
+    <h2>Welcome</h2>
+    <p>Username: {{ username }}</p>
+    <p>User Type: {{ user_type }}</p>
+    <p>Login Time: {{ login_time }}</p>
+    <form action="{{ url_for('logout') }}" method="post">
+        <button type="submit">Logout</button>
+    </form>
+</body>
+</html>
+
+
+
+	
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .welcome-container {
+            background-color: #ffffff;
+            padding: 30px 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #444;
+        }
+        p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .logout-button {
+            margin-top: 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .logout-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-container">
+        <h2>Welcome!</h2>
+        <p><strong>Username:</strong> {{ username }}</p>
+        <p><strong>User Type:</strong> {{ user_type }}</p>
+        <p><strong>Login Time:</strong> {{ login_time }}</p>
+        <form action="{{ url_for('logout') }}" method="post">
+            <button type="submit" class="logout-button">Logout</button>
+        </form>
+    </div>
+</body>
+</html>
+
